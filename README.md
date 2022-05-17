@@ -2,6 +2,7 @@
 <p style="text-align: center">NextJS 12 / Tailwindcss / TypeScript</p>
 <img src="./showcase.png" />
 ## Usage
+
 Run portfolio inside a docker container
 
 If you want to expose a different port, edit <a href="docker-compose.yml">docker-compose.yml</a>
