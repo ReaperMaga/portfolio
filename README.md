@@ -1,6 +1,10 @@
-<h1 style="text-align: center">Portfolio</h1>
-<p style="text-align: center">NextJS 12 / Tailwindcss / TypeScript</p>
+
+<h1 align="center">Portfolio</h1>
 <img src="./showcase.png" />
+
+
+_________________
+
 ## Usage
 
 Run portfolio inside a docker container
