@@ -1,0 +1,25 @@
+@import "atropos/atropos.min.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.react-icons {
+    vertical-align: middle;
+    color: white;
+}
+
+@font-face {
+    font-family: "CODE Bold";
+    src: url("/fonts/CODE.otf") format("opentype");
+}
+
+.font-code {
+    font-family: "CODE Bold", sans-serif;
+    letter-spacing: 3px;
+}
+
+.atropos-card {
+    width: 320px;
+    height: 160px;
+}
