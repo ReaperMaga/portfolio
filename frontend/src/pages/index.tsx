@@ -23,7 +23,7 @@ const IndexPage = observer(() => {
                         />
                         <h1 className="text-lg text-gray-500 font-code">Fullstack Developer / Freelancer</h1>
                         <div className="mt-12">
-                            <OutlineButton text="Contact me"/>
+                            <OutlineButton>CONTACT ME</OutlineButton>
                         </div>
                     </div>
 

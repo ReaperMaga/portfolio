@@ -1,8 +1,11 @@
 @import "atropos/atropos.min.css";
+@import '@splidejs/react-splide/css';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 
 .react-icons {
     vertical-align: middle;
