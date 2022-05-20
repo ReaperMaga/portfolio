@@ -1,6 +1,5 @@
 import {observer} from "mobx-react-lite";
 import Layout from "../layouts/Layout";
-import SwitchSceneAnimation from "../components/animation/SwitchSceneAnimation";
 import TypeAnimation from "react-type-animation"
 import OutlineButton from "../components/buttons/OutlineButton";
 import ScaleInAnimation from "../components/animation/ScaleInAnimation";
@@ -13,7 +12,7 @@ const IndexPage = observer(() => {
     return (
         <Layout>
             <ScaleInAnimation>
-                <div className="flex items-center justify-center xl:justify-start w-full h-full px-0 xl:px-56">
+                <div className="flex justify-center xl:justify-start items-center px-0 xl:px-56 w-full h-full">
                     <div className="flex flex-col items-start w-1/2">
                         <TypeAnimation
                             cursor={true}
@@ -27,7 +26,7 @@ const IndexPage = observer(() => {
                         </div>
                     </div>
 
-                    <div className="justify-start hidden xl:flex w-1/2 z-30">
+                    <div className="hidden xl:flex z-30 justify-start w-1/2">
                         <Lottie options={{
                             loop: true,
                             autoplay: true,

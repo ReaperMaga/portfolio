@@ -12,7 +12,7 @@ const AboutMe = () => {
     return (
         <Layout>
             <ScaleInAnimation>
-                <div className="flex flex-col items-center justify-center xl:items-start w-full h-full px-0 xl:px-56 overflow-hidden">
+                <div className="flex overflow-hidden flex-col justify-center items-center xl:items-start px-0 xl:px-56 w-full h-full">
                     <Splide ref={splide} aria-label="My Favorite Images" options={{
                         wheel: true,
                         pagination: false,
@@ -39,9 +39,9 @@ const AboutMe = () => {
 
 const AboutMeContent = ({onClick}) => {
     return (
-        <div className="flex flex-col w-full h-full justify-center px-2">
+        <div className="flex flex-col justify-center px-2 w-full h-full">
             <AboutMeText/>
-            <div className="flex justify-center items-start w-full pt-12 md:pt-28">
+            <div className="flex justify-center items-start pt-12 md:pt-28 w-full">
                 <a onClick={onClick}
                    className="flex flex-col items-center transition animate-pulse hover:scale-95 cursor-pointer">
                         <span className="text-lg text-gray-400 font-code">
@@ -58,10 +58,10 @@ const AboutMeContent = ({onClick}) => {
 
 const ProjectsContent = ({onClick}) => {
     return (
-        <div className="flex flex-col w-full h-full justify-center px-2">
-            <div className="flex justify-center items-end w-full pb-12 md:pb-28">
+        <div className="flex flex-col justify-center px-2 w-full h-full">
+            <div className="flex justify-center items-end pb-12 md:pb-28 w-full">
                 <a onClick={onClick}
-                   className="hover:scale-95 flex flex-col items-center mt-5 space-y-2 cursor-pointer animate-pulse transition">
+                   className="flex flex-col items-center mt-5 space-y-2 transition animate-pulse hover:scale-95 cursor-pointer">
                     <span className="text-lg text-gray-300">
                             <AiOutlineArrowUp/>
                         </span>

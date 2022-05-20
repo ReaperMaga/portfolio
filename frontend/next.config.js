@@ -1,13 +1,9 @@
 module.exports = {
-    experimental: {
-        images: {
-            layoutRaw: true
-        }
-    },
+    assetPrefix: "./",
     eslint: {
         dirs: ['src'],
     },
     images: {
-        domains: ['woolgens.net'],
+        domains: ['imgur.com'],
     },
 }

@@ -5,7 +5,7 @@ import OutlineButton from "../buttons/OutlineButton";
 
 const AboutMeText = () => {
     return (
-        <div className="flex flex-col items-start w-full 2xl:w-1/2 justify-center space-y-10">
+        <div className="flex flex-col justify-center items-start space-y-10 w-full 2xl:w-1/2">
             <TypeAnimation
                 cursor={true}
                 sequence={["About me", 6000]}
@@ -14,8 +14,7 @@ const AboutMeText = () => {
             />
             <div className="flex relative w-full">
                 <div className="absolute w-px h-full bg-sky-600"></div>
-                <p className="pl-5 text-md md:text-xl text-gray-400">
-
+                <p className="pl-5 md:text-xl text-gray-400 text-md">
                     My name is Maga A., I was born in Russia, but moved to Austria when I was 2 years old.
 
                     I attended a private school and graduated with a satisfactory result.
