@@ -17,7 +17,7 @@ const AboutMeText = () => {
                 <p className="pl-5 md:text-xl text-gray-400 text-md">
                     My name is Maga A., I was born in Russia, but moved to Austria when I was 2 years old.
 
-                    I attended a private school and graduated with a satisfactory result.
+                    I attended a private school and graduated with a normal result.
                     I taught myself programming by developing projects that I could use myself. I never went into it with the intention of really making money with my programming skills and saw it more as a hobby. After some time my skills developed and I started doing contract programming.
 
                     I trained myself in backend development, frontend development, game development and mobile app development.

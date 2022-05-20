@@ -12,7 +12,7 @@ const Page = observer(() => {
         <Layout>
             <ScaleInAnimation>
                 <div className="flex flex-col justify-center items-center w-full h-full">
-                    <h1 className="text-4xl text-red-500 uppercase font-code mb-10">404 page not found</h1>
+                    <h1 className="mb-10 text-4xl text-red-500 uppercase font-code">404 page not found</h1>
                     <Lottie options={{
                         loop: true,
                         autoplay: true,

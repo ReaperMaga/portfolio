@@ -26,7 +26,7 @@ const AboutMeProjectCard = ({title, imageUrl, children, url}: AboutMeProjectCard
                 if(url) {
                     router.push(url)
                 }
-            }} onMouseEnter={() => setHovering(true)} onMouseLeave={() => setHovering(false)}  className="cursor-pointer w-full h-64 rounded shadow bg-zinc-700 bg-cover bg-center border-4 border-zinc-700"
+            }} onMouseEnter={() => setHovering(true)} onMouseLeave={() => setHovering(false)}  className="w-full h-64 bg-center bg-cover rounded border-4 shadow cursor-pointer bg-zinc-700 border-zinc-700"
                  style={{backgroundImage: "url('"+imageUrl+"')"}}>
                 <div className="w-full h-full bg-transparent transition hover:bg-zinc-600/75">
                     <Transition
@@ -35,7 +35,7 @@ const AboutMeProjectCard = ({title, imageUrl, children, url}: AboutMeProjectCard
                         enterFrom="translate-y-full"
                         enterTo="translate-y-0"
                         as="div"
-                        className="flex flex-col justify-center items-center w-full h-full space-y-2"
+                        className="flex flex-col justify-center items-center space-y-2 w-full h-full"
                     >
                         <h1 className="text-3xl text-gray-300 uppercase font-code">{title}</h1>
                         <div className="flex justify-center w-full">

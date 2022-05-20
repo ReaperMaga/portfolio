@@ -1,14 +1,8 @@
 import {observer} from "mobx-react-lite";
-import dynamic from "next/dynamic";
-
-const AboutMeNoSsr = dynamic(
-    () => import('../components/about/AboutMe'),
-    { ssr: false }
-)
-
+import AboutMe from "../components/about/AboutMe";
 
 const Page = observer(() => {
-    return <AboutMeNoSsr />
+    return <AboutMe />
 })
 
 export default Page
