@@ -92,9 +92,9 @@ const Page = observer(() => {
                         }
                         
                         <div className="flex flex-col space-x-5">
-                            <OutlineButton onClick={() => {submit()}} className="flex space-x-3 items-center justify-center">
+                            <OutlineButton onClick={() => {submit()}} className="flex justify-center items-center space-x-3">
                                 {loading &&
-                                    <span className="animate-spin text-lg text-gray-400"><ImSpinner /></span>
+                                    <span className="text-lg text-gray-400 animate-spin"><ImSpinner /></span>
                                 }
                                 <span className="pt-1">SEND</span>
                             </OutlineButton>
