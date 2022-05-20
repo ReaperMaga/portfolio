@@ -3,15 +3,15 @@ FROM node:12
 ENV PORT 3000
 
 # Create app directory
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+RUN mkdir -p /application
+WORKDIR /application
 
 # Installing dependencies
-COPY package*.json /usr/src/app/
+COPY package*.json /application
 RUN yarn install
 
 # Copying source files
-COPY . /usr/src/app
+COPY . /application
 
 # Building app
 RUN yarn build

@@ -8,7 +8,6 @@ import Lottie from 'react-lottie';
 import * as animation from '../../public/animations/home-animation.json'
 
 const IndexPage = observer(() => {
-
     return (
         <Layout>
             <ScaleInAnimation>

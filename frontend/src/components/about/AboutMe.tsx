@@ -13,7 +13,7 @@ const AboutMe = () => {
         <Layout>
             <ScaleInAnimation>
                 <div className="flex overflow-hidden flex-col justify-center items-center xl:items-start px-0 xl:px-56 w-full h-full">
-                    <Splide ref={splide} aria-label="My Favorite Images" options={{
+                    <Splide ref={splide} aria-label="Projects" options={{
                         wheel: true,
                         pagination: false,
                         arrows: false,

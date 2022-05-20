@@ -8,7 +8,7 @@ interface OutlineButtonProps extends DetailedHTMLProps<ButtonHTMLAttributes<HTML
 const OutlineButton = ({children, className = "", ...HTMLAttributes}: OutlineButtonProps) => {
 
     const classes = [
-        "border border-sky-600 text-gray-400 px-4 py-2 transition hover:bg-sky-700 rounded-sm",
+        "border border-sky-600 text-gray-400 px-4 py-2 transition hover:bg-sky-700 rounded-sm font-code",
         className,
     ]
 
