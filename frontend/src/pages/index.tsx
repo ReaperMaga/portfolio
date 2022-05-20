@@ -6,6 +6,7 @@ import ScaleInAnimation from "../components/animation/ScaleInAnimation";
 
 import Lottie from 'react-lottie';
 import * as animation from '../../public/animations/home-animation.json'
+import Link from "next/link";
 
 const IndexPage = observer(() => {
     return (
@@ -21,7 +22,9 @@ const IndexPage = observer(() => {
                         />
                         <h1 className="text-lg text-gray-500 font-code">Fullstack Developer / Freelancer</h1>
                         <div className="mt-12">
-                            <OutlineButton>CONTACT ME</OutlineButton>
+                            <Link href="/contact" passHref={true}>
+                                <OutlineButton>CONTACT ME</OutlineButton>
+                            </Link>
                         </div>
                     </div>
 
