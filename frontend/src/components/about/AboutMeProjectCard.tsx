@@ -22,7 +22,7 @@ const AboutMeProjectCard = ({title, imageUrl, children, url}: AboutMeProjectCard
                  className="w-full h-64 bg-center bg-cover rounded border-4 shadow cursor-pointer bg-zinc-700 border-zinc-700"
                  style={{backgroundImage: "url('" + imageUrl + "')"}}>
                 <div className="w-full h-full bg-transparent transition hover:bg-zinc-600/75">
-                    <a className="w-full h-full" href={url} target="_blank">
+                    <a className="w-full h-full" href={url} target="_blank" rel="noreferrer">
                         <Transition
                             show={hovering}
                             enter="transform transition duration-500"

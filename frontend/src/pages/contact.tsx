@@ -41,7 +41,7 @@ const Page = observer(() => {
                 message
             }
             setLoading(true)
-            emailjs.send(serviceId, templateId, templateParams, userId).then((response) => {
+            emailjs.send(serviceId, templateId, templateParams, userId).then(() => {
                 setResponse("")
                 setSuccessResponse("Successfully sent")
                 setLoading(false)
