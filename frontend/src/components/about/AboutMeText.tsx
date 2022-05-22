@@ -27,11 +27,11 @@ const AboutMeText = () => {
             </div>
 
             <div className="flex space-x-5">
-                <a href="https://github.com/reapermaga">
+                <a href="https://github.com/reapermaga" target="_blank">
                     <OutlineButton><AiOutlineGithub /></OutlineButton>
                 </a>
 
-                <a href="https://twitter.com/reaper_maga">
+                <a href="https://twitter.com/reaper_maga" target="_blank">
                     <OutlineButton><AiOutlineTwitter /></OutlineButton>
                 </a>
             </div>
