@@ -26,3 +26,11 @@
     width: 320px;
     height: 160px;
 }
+
+.atropos-scale {
+    pointer-events: none;
+}
+
+.atropos-rotate {
+    pointer-events: all;
+}
