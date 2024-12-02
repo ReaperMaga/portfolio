@@ -4,8 +4,8 @@ import dev.fritz2.core.RenderContext
 import dev.fritz2.core.joinClasses
 
 enum class ButtonType(val classes: String) {
-    PRIMARY("bg-primary hover:bg-primary/60"),
-    SECONDARY("bg-secondary hover:bg-secondary/60")
+    PRIMARY("bg-gradient-to-r from-primary to-primary-600 hover:opacity-90"),
+    SECONDARY("bg-gradient-to-r from-secondary to-secondary-600 hover:opacity-90")
 }
 
 fun RenderContext.customButton(text: String, type : ButtonType = ButtonType.PRIMARY, onClick: () -> Unit = {}) {
