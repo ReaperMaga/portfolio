@@ -1,45 +1,52 @@
 package com.github.reapermaga.fritz2
 
 import com.github.reapermaga.fritz2.components.*
+import com.github.reapermaga.fritz2.utils.loremIpsum
+import dev.fritz2.core.RenderContext
+import dev.fritz2.core.href
 import dev.fritz2.core.render
+import dev.fritz2.core.src
 
 
 fun main() {
     render {
         div("w-screen min-h-screen bg-[radial-gradient(169.40%_89.55%_at_94.76%_6.29%,#0F110C_0%,#0C0E0A_100%)] flex flex-col inter-500 text-gray-300") {
-            navbar()
             stars()
-            header("flex justify-between w-7/12 mx-auto mt-28 z-10 px-10") {
-                div("w-1/2 flex justify-center flex-col") {
-                    h1("text-4xl font-bold") {
-                        +"Hello, my name is "
-                        span("text-primary") {
-                            +"Maga"
-                        }
-                    }
-                    p("mt-4 text-gray-400 text-xl") {
-                        +"I'm a full-stack developer specializing in backend magic, but I can handle frontend too. I build scalable systems, craft seamless APIs, and create smooth user experiences across the stack!"
-                    }
-                    div("flex mt-6 gap-6") {
-                        customButton("Read more...", ButtonType.PRIMARY)
-                        customButton("View my projects", ButtonType.SECONDARY)
-                    }
+            div("w-8/12 mx-auto z-10") {
+                navbar()
+                header()
+                div("mt-20 w-full grid grid-cols-3 gap-4 justify-center px-10") {
+                    card()
+                    card()
+                    card()
                 }
-                div("flex flex-col items-end") {
-                    profileImage()
-                    div("w-full flex gap-4 justify-center mt-3") {
-                        socialIcon(
-                            "ph:github-logo-fill",
-                            iconClasses = "text-xl bg-slate-600 p-2 rounded-full opacity-80 hover:opacity-100",
-                            href = "https://github.com/reapermaga")
-                        socialIcon(
-                            "ph:twitter-logo-fill",
-                            iconClasses = "text-xl bg-blue-500 p-2 rounded-full opacity-80 hover:opacity-100",
-                            href = "https://twitter.com/reaper_maga")
-                    }
-                }
+            }
 
+        }
+    }
+}
+
+fun RenderContext.card() {
+    div("flex flex-col justify-between overflow-hidden w-full h-72 glass bg-background-400/60 border border-background-200 hover:-translate-y-1 transition") {
+        div("w-full flex justify-between px-5 py-6") {
+            div("flex flex-col gap-3") {
+                h2("text-xl font-bold") {
+                    +"Pixeltranslate"
+                }
+                p("text-md text-gray-400") {
+                    +loremIpsum(9)
+                }
+            }
+            a {
+                href("https://pixeltranslate.com")
+                icon("ph:arrow-square-out-bold", "text-2xl text-gray-400 hover:text-gray-300 transition")
             }
         }
+        div("w-full h-full mt-3 px-5") {
+            img("rounded-t-lg shadow-lg") {
+                src("images/pixeltranslate.png")
+            }
+        }
+
     }
 }
