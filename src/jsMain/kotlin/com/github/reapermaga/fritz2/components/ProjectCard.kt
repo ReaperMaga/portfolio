@@ -1,6 +1,5 @@
 package com.github.reapermaga.fritz2.components
 
-import com.github.reapermaga.fritz2.utils.loremIpsum
 import dev.fritz2.core.RenderContext
 import dev.fritz2.core.href
 import dev.fritz2.core.src
