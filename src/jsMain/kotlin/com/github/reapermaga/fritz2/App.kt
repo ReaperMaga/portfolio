@@ -1,11 +1,10 @@
 package com.github.reapermaga.fritz2
 
-import com.github.reapermaga.fritz2.components.*
-import com.github.reapermaga.fritz2.utils.loremIpsum
-import dev.fritz2.core.RenderContext
-import dev.fritz2.core.href
+import com.github.reapermaga.fritz2.components.header
+import com.github.reapermaga.fritz2.components.navbar
+import com.github.reapermaga.fritz2.components.projectCard
+import com.github.reapermaga.fritz2.components.stars
 import dev.fritz2.core.render
-import dev.fritz2.core.src
 
 
 fun main() {
@@ -16,9 +15,20 @@ fun main() {
                 navbar()
                 header()
                 div("mt-20 w-full grid grid-cols-3 gap-4 justify-center px-10") {
-                    card()
-                    card()
-                    card()
+                    projectCard("Pixeltranslate",
+                        "https://pixeltranslate.com",
+                        "images/pixeltranslate.png",
+                        "Translation service specialized in game development")
+                    projectCard("Rechnungsradar",
+                        "https://rechnungsradar.com",
+                        "images/rechnungsradar.png",
+                        "Tool to manage your invoices and payments"
+                        )
+                    projectCard("Ameliorated",
+                        "https://ameliorated.info",
+                        "images/ameliorated.png",
+                        "Windows performance enhancement wizard"
+                    )
                 }
             }
 
@@ -26,27 +36,3 @@ fun main() {
     }
 }
 
-fun RenderContext.card() {
-    div("flex flex-col justify-between overflow-hidden w-full h-72 glass bg-background-400/60 border border-background-200 hover:-translate-y-1 transition") {
-        div("w-full flex justify-between px-5 py-6") {
-            div("flex flex-col gap-3") {
-                h2("text-xl font-bold") {
-                    +"Pixeltranslate"
-                }
-                p("text-md text-gray-400") {
-                    +loremIpsum(9)
-                }
-            }
-            a {
-                href("https://pixeltranslate.com")
-                icon("ph:arrow-square-out-bold", "text-2xl text-gray-400 hover:text-gray-300 transition")
-            }
-        }
-        div("w-full h-full mt-3 px-5") {
-            img("rounded-t-lg shadow-lg") {
-                src("images/pixeltranslate.png")
-            }
-        }
-
-    }
-}
