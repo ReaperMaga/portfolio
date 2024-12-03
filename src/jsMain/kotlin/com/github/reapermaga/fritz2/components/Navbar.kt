@@ -8,7 +8,6 @@ fun RenderContext.navbar() {
         logo()
         ul("flex gap-6 items-center") {
             navbarLink("Home")
-            navbarLink("About me")
             navbarLink("Projects")
             customButton("Contact me", ButtonType.PRIMARY)
         }

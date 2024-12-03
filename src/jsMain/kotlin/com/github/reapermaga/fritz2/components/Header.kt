@@ -3,7 +3,7 @@ package com.github.reapermaga.fritz2.components
 import dev.fritz2.core.RenderContext
 
 fun RenderContext.header() {
-    header("flex justify-between w-full mx-auto mt-28 px-10") {
+    header("flex justify-between w-full mx-auto mt-28") {
         div("w-1/2 flex justify-center flex-col") {
             h1("text-4xl font-bold") {
                 +"Hello, my name is "
