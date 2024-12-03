@@ -11,11 +11,8 @@ plugins {
 
 repositories {
     mavenCentral()
-    maven("https://s01.oss.sonatype.org/content/repositories/snapshots/") // new repository here
+    maven("https://s01.oss.sonatype.org/content/repositories/snapshots/")
 }
-
-//group = "my.fritz2.app"
-//version = "0.0.1-SNAPSHOT"
 
 kotlin {
     jvm()
@@ -28,17 +25,6 @@ kotlin {
             dependencies {
                 implementation(libs.fritz2.core)
                 implementation(libs.fritz2.serialization)
-                // implementation(libs.fritz2.headless) // optional
-            }
-        }
-        val jvmMain by getting {
-            tasks.withType<Jar> {
-                manifest {
-                    attributes["Main-Class"] = "com.github.reapermaga.fritz2.MainKt"
-                }
-            }
-            dependencies {
-
             }
         }
         val jsMain by getting {
@@ -46,7 +32,6 @@ kotlin {
                 // tailwind
                 implementation(npm(libs.tailwindcss.core))
                 implementation(npm(libs.tailwindcss.typography))
-                //implementation(npm(libs.tailwindcss.forms)) // optional
 
                 // webpack
                 implementation(npm(libs.postcss.core))
