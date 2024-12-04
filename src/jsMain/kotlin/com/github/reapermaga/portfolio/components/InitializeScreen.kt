@@ -1,7 +1,6 @@
-package com.github.reapermaga.fritz2.components
+package com.github.reapermaga.portfolio.components
 
 import dev.fritz2.core.RenderContext
-import dev.fritz2.core.joinClasses
 import dev.fritz2.core.storeOf
 import dev.fritz2.core.transition
 import dev.fritz2.core.waitForAnimation

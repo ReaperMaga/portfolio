@@ -1,10 +1,7 @@
-package com.github.reapermaga.fritz2
+package com.github.reapermaga.portfolio
 
-import com.github.reapermaga.fritz2.components.*
-import com.github.reapermaga.fritz2.utils.loremIpsum
-import dev.fritz2.core.placeholder
+import com.github.reapermaga.portfolio.components.*
 import dev.fritz2.core.render
-import dev.fritz2.core.type
 
 
 fun main() {

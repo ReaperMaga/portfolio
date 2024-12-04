@@ -1,4 +1,4 @@
-package com.github.reapermaga.fritz2.utils
+package com.github.reapermaga.portfolio.utils
 
 fun loremIpsum(words: Int): String {
     val loremIpsum = """

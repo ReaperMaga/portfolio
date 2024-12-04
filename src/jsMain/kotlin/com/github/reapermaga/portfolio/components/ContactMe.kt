@@ -1,6 +1,5 @@
-package com.github.reapermaga.fritz2.components
+package com.github.reapermaga.portfolio.components
 
-import com.github.reapermaga.fritz2.utils.loremIpsum
 import dev.fritz2.core.RenderContext
 import dev.fritz2.core.joinClasses
 import dev.fritz2.core.placeholder
