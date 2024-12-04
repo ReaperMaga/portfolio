@@ -1,7 +1,10 @@
 package com.github.reapermaga.fritz2
 
 import com.github.reapermaga.fritz2.components.*
+import com.github.reapermaga.fritz2.utils.loremIpsum
+import dev.fritz2.core.placeholder
 import dev.fritz2.core.render
+import dev.fritz2.core.type
 
 
 fun main() {
@@ -15,14 +18,10 @@ fun main() {
                 navbar()
                 header()
                 projects()
-
-                div("mt-28") {
-                    h1("text-4xl font-bold") {
-                    }
-                }
+                contactMe()
 
             }
-
+            footer()
         }
     }
 }

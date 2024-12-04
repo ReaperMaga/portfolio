@@ -18,3 +18,10 @@ fun RenderContext.socialIcon(icon: String, iconClasses: String = "", href: Strin
         icon(icon, iconClasses)
     }
 }
+
+fun RenderContext.githubIcon() {
+    socialIcon(
+        "ph:github-logo-fill",
+        iconClasses = "text-xl bg-slate-600 p-2 rounded-full opacity-80 hover:opacity-100",
+        href = "https://github.com/reapermaga")
+}

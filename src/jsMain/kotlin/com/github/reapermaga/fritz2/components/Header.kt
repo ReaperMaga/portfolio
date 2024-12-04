@@ -22,14 +22,12 @@ fun RenderContext.header() {
         div("flex flex-col items-end") {
             profileImage()
             div("w-full flex gap-4 justify-center mt-3") {
-                socialIcon(
-                    "ph:github-logo-fill",
-                    iconClasses = "text-xl bg-slate-600 p-2 rounded-full opacity-80 hover:opacity-100",
-                    href = "https://github.com/reapermaga")
+                githubIcon()
                 socialIcon(
                     "ph:twitter-logo-fill",
                     iconClasses = "text-xl bg-blue-500 p-2 rounded-full opacity-80 hover:opacity-100",
-                    href = "https://twitter.com/reaper_maga")
+                    href = "https://twitter.com/reaper_maga"
+                )
             }
         }
 
