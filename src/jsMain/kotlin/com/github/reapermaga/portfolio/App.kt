@@ -1,6 +1,8 @@
 package com.github.reapermaga.portfolio
 
 import com.github.reapermaga.portfolio.components.*
+import dev.fritz2.core.RenderContext
+import dev.fritz2.core.id
 import dev.fritz2.core.render
 
 
@@ -11,13 +13,22 @@ fun main() {
             stars()
             gridPattern()
             div("w-full md:w-11/12 2xl:w-8/12 mx-auto z-10 px-2 lg:px-10") {
+                linkMarker("home")
                 navbar()
                 header()
+                linkMarker("projects")
                 projects()
+                linkMarker("contact")
                 contactMe()
             }
             footer()
         }
+    }
+}
+
+fun RenderContext.linkMarker(url: String) {
+    div {
+        id(url)
     }
 }
 

@@ -1,6 +1,7 @@
 package com.github.reapermaga.portfolio.components
 
 import dev.fritz2.core.RenderContext
+import kotlinx.browser.window
 
 fun RenderContext.header() {
     header("flex flex-col sm:flex-row gap-y-10 justify-between w-full mx-auto mt-28") {
@@ -15,8 +16,9 @@ fun RenderContext.header() {
                 +"Hi! I’m a full-stack developer. I’m really good at backend stuff, but I can do frontend too. I like building things that work well and making sure everything runs smoothly."
             }
             div("flex mt-6 gap-6") {
-                customButton("Read more...", ButtonType.PRIMARY)
-                customButton("View my projects", ButtonType.SECONDARY)
+                customButton("View my projects", ButtonType.SECONDARY, onClick = {
+                    window.location.href = "#projects"
+                })
             }
         }
         div("flex flex-col items-center sm:items-end") {
