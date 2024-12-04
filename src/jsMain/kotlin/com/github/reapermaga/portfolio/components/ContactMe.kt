@@ -26,14 +26,14 @@ fun RenderContext.contactMe() {
     }
 }
 
-fun RenderContext.contactMeInput(placeholder: String, type: String = "text", classes: String = "") {
+fun RenderContext.contactMeInput(placeholder : String, type : String = "text", classes : String = "") {
     input(joinClasses("w-1/2 px-3 py-2 rounded bg-background-400 shadow-xl glass", classes)) {
         type(type)
         placeholder(placeholder)
     }
 }
 
-fun RenderContext.contactMeTextArea(placeholder: String) {
+fun RenderContext.contactMeTextArea(placeholder : String) {
     textarea(joinClasses("w-full px-3 py-2 rounded bg-background-400/80 shadow-xl glass min-h-48")) {
         placeholder(placeholder)
     }
