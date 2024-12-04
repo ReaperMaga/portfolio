@@ -46,7 +46,7 @@ kotlin {
 }
 
 rootProject.plugins.withType<YarnPlugin> {
-    rootProject.the<YarnRootExtension>().lockFileDirectory = project.rootDir.resolve("/")
+    rootProject.the<YarnRootExtension>().lockFileDirectory = project.rootDir.resolve("./")
 }
 
 
