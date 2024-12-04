@@ -3,8 +3,8 @@ package com.github.reapermaga.portfolio.components
 import dev.fritz2.core.RenderContext
 
 fun RenderContext.header() {
-    header("flex justify-between w-full mx-auto mt-28") {
-        div("w-1/2 flex justify-center flex-col") {
+    header("flex flex-col sm:flex-row gap-y-10 justify-between w-full mx-auto mt-28") {
+        div("w-full sm:w-1/2 flex justify-center flex-col") {
             h1("text-4xl font-bold") {
                 +"Hello, my name is "
                 span("text-primary") {
@@ -19,7 +19,7 @@ fun RenderContext.header() {
                 customButton("View my projects", ButtonType.SECONDARY)
             }
         }
-        div("flex flex-col items-end") {
+        div("flex flex-col items-center sm:items-end") {
             profileImage()
             div("w-full flex gap-4 justify-center mt-3") {
                 githubIcon()

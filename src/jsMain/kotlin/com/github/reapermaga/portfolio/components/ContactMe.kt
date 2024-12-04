@@ -19,7 +19,7 @@ fun RenderContext.contactMe() {
             +"If you have any questions or want to work together, feel free to contact me. I will try to respond as soon as possible."
         }
 
-        form("my-6 flex flex-col gap-4 w-7/12") {
+        form("my-6 flex flex-col gap-4 w-full md:w-11/12 xl:w-7/12") {
             id("contact-form")
             contactMeInput("Your name", name = "name")
             contactMeInput("Your email", type = "email", name = "email")
@@ -70,7 +70,7 @@ fun RenderContext.contactMeInput(
     classes : String = "",
     name : String = ""
 ) {
-    input(joinClasses("w-1/2 px-3 py-2 rounded bg-background-400 shadow-xl glass", classes)) {
+    input(joinClasses("w-full sm:w-1/2 px-3 py-2 rounded bg-background-400 shadow-xl glass", classes)) {
         type(type)
         name(name)
         placeholder(placeholder)
