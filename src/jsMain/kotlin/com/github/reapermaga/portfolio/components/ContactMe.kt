@@ -21,7 +21,10 @@ fun RenderContext.contactMe() {
             contactMeInput("Your name")
             contactMeInput("Your email", type = "email")
             contactMeTextArea("Message")
-            customButton("Send", ButtonType.SECONDARY, classes = "w-max")
+            customButton("Send", ButtonType.SECONDARY, classes = "w-max", onClick = { event ->
+                event.preventDefault()
+            })
+
         }
     }
 }
