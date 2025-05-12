@@ -5,12 +5,9 @@ import dev.fritz2.core.RenderContext
 fun RenderContext.logo() {
     h1("text-xl md:text-3xl font-bold uppercase cursor-pointer flex") {
         span {
-            +"Reape"
+            +"Reaper"
         }
-        div("text-primary rotate-180") {
-            +"r"
-        }
-        span {
+        span("text-primary") {
             +"Maga"
         }
     }
