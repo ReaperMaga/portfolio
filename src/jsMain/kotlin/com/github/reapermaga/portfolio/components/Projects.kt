@@ -3,7 +3,7 @@ package com.github.reapermaga.portfolio.components
 import dev.fritz2.core.RenderContext
 
 fun RenderContext.projects() {
-    section("mt-20 flex flex-col gap-y-4") {
+    section("mt-10 flex flex-col gap-y-4") {
         div("flex flex-col mt-20 mb-5 gap-y-2") {
             h1("text-3xl font-bold text-gray-200") {
                 +"My projects"

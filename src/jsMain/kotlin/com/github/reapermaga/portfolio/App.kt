@@ -15,6 +15,8 @@ fun main() {
                 linkMarker("home")
                 navbar()
                 header()
+                linkMarker("skills")
+                skills()
                 linkMarker("projects")
                 projects()
             }

@@ -8,6 +8,7 @@ fun RenderContext.navbar() {
         logo()
         ul("flex gap-8 items-center") {
             navbarLink("Home")
+            navbarLink("Skills", url = "#skills")
             navbarLink("Projects", url = "#projects")
         }
     }
